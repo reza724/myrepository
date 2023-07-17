@@ -1,0 +1,78 @@
+.container{
+    margin: auto;
+    width: 550px;
+    height:500px;
+    --bg-color: #ffffff;  
+    background: linear-gradient(135deg, #3a3a3a, #000000);
+    justify-content: center;
+}
+
+.body{
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.container .btstyle:nth-child(-n+3) {
+    background-color: inherit; 
+}
+
+
+.container .btstyle:nth-child(+4) {
+    background-color: #ffae00; 
+}
+
+.container .displayresult{
+    background-color: #7c7c7c;
+    color: white;
+    width: 100%;
+    font-size: 20px;
+    border: none;
+
+}
+
+.row{
+    display: flex;
+    height: 14.28%;
+}
+
+.btstyle{
+    width: 100%;
+    font-family: sans-serif;
+    color: aliceblue;
+    border: none;
+    font-size: 20px ;
+    position: relative;
+
+}
+
+
+.btstyle:hover{
+    border:2px solid red ;
+    text-decoration-line: underline; 
+    /* text-decoration-color: red;
+    text-decoration-style: dashed; */
+}
+
+
+
+
+
+
+
+
+
+
+
+/*  section 2 */
+/* .animation {
+    margin: auto;
+    background-image: none;
+    width: 271px;
+    height: 57px;
+    border: 2px solid red;
+    border-radius: 46px;
+  } */
+/* section 8 */
+/* .hidden{
+    display: none;
+} */

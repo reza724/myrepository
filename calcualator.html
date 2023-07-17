@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jscalculator.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-QIjxcs84qf9aNgRj8leCDcc75v0LDR/BEt6aX7VzK+7i6Wm6dtoufPrDlRzwoZuzFGF0PNb9gTc+QrK0WcN/hw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" >
+        <div class="row" style="display: flex;">
+            <input type="text" class="displayresult" placeholder="0" name="displayresult" id="displayresult"  onload="calculate(displayresult.value)">
+        </div>
+        <div class="row">
+            <input class="btstyle" type="button" name="" id="absolute" value="&#124; x &#124;" onclick="mathcalculator('abs')">
+            <input class="btstyle" type="button" name="" id="sqrt" value="&Sqrt;" onclick="mathcalculator('sqrt')">
+            <input type="button" class="btstyle" name="" id="reset" value="log" onclick="mathcalculator('log')" >
+            <input type="button" class="btstyle" name="" id="reset" value="c" onclick="reset(reset.value)" >
+
+        </div>
+        <div class="row">
+            <input class="btstyle" type="button" name="" id="absolute" value="⌈ ⌉" onclick="mathcalculator('ceil')">
+            <input class="btstyle" type="button" name="" id="floor" value='⌊ ⌋' onclick="mathcalculator('floor')">
+            <input class="btstyle" type="button" name="" id="round" value="^" onclick="mathcalculator('pow')">
+            <input class="btstyle" type="button" name="devision" value="/" onclick="calculate(this.value)">
+
+        </div>
+    <div class="row" >
+            <input class="btstyle" type="button" name="b1" value="1" onclick="calculate(this.value)" >
+            <input class="btstyle" type="button" name="b2" value="2" onclick="calculate(this.value)">
+            <input class="btstyle" type="button" name="b3" value="3" onclick="calculate(this.value)">
+            <input class="btstyle" type="button" name="add" value="+" onclick="calculate(this.value)">
+        </div>
+        <div class="row" >
+            <input class="btstyle" type="button" name="b4" value="4" onclick="calculate(this.value)">
+            <input class="btstyle"type="button" name="b5" value="5" onclick="calculate(this.value)">
+            <input class="btstyle" type="button" name="b6" value="6" onclick="calculate(this.value)">
+            <input class="btstyle" type="button" name="mul" value="-" onclick="calculate(this.value)">
+        </div>
+        <div class="row" >
+            <input class="btstyle" type="button" name="b7" value="7" onclick="calculate(this.value)">
+            <input class="btstyle" type="button" name="b8" value="8" onclick="calculate(this.value)">
+            <input class="btstyle" type="button" name="b9" value="9" onclick="calculate(this.value)">
+            <input class="btstyle" type="button" name="multiply" value="*" onclick="calculate(this.value)">
+        </div>
+        <div class="row" >
+            <input class="btstyle" type="button" name="dot" value="." onclick="calculate(this.value)">
+            <input class="btstyle" type="button" name="zero" value="0" onclick="calculate(this.value)">
+            <input class="btstyle" type="button" name="" id="round" value="round" onclick="mathcalculator('round')">
+
+            <input class="btstyle" type="button" name="equal" value="=" onclick="finalize()">
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
